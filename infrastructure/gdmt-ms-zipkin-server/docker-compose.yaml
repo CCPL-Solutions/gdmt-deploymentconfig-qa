@@ -1,0 +1,12 @@
+services:
+  gdmt-ms-zipkin-server:
+    image: openzipkin/zipkin
+    container_name: gdmt-ms-zipkin-server
+    ports:
+      - "9411:9411"
+    restart: always
+    networks:
+      - gdmt-microservices-network
+networks:
+  gdmt-microservices-network:
+    external: true
