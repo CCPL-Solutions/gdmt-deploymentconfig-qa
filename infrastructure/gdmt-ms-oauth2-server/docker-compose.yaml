@@ -4,7 +4,7 @@ services:
     container_name: gdmt-ms-oauth2-server
     environment:
       CONTEXT_PATH: /api/v1.0
-      MS_VERSION: re-v1-0-0
+      MS_VERSION: re-v1-0
       PROFILE_ACTIVE: qa
       CONFIG_SERVER_URI: http://gdmt-ms-config-server:8888
       VAULT_SCHEME: http
